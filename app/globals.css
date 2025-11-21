@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --app-bg: radial-gradient(circle at top left, rgba(124, 58, 237, 0.16), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(14, 116, 144, 0.16), transparent 50%);
+}
+
+body {
+  @apply bg-slate-950 text-white min-h-screen;
+  background-image: var(--app-bg);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
+}
